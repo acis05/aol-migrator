@@ -39,3 +39,6 @@ Untuk produksi skala besar, pindahkan migrasi panjang dari HTTP request ke worke
 ## Cakupan jurnal
 - `journal_voucher_only` aktif: membaca `/api/journal-voucher/list.do` dengan `filter.transDate` dan pagination `sp.page`/`sp.pageSize`, lalu detail via `/detail.do`.
 - `all_transaction_journals` sudah tersedia sebagai pilihan UI tetapi sengaja belum dieksekusi. Endpoint `/api/journal-voucher` adalah resource Jurnal Umum, bukan endpoint seluruh jurnal otomatis dari semua modul. Tambahkan endpoint sumber seluruh jurnal sebelum mengaktifkan mode ini.
+
+## Railway Docker note (v2.2)
+The Dockerfile does not require `/app/public` in the runner image, so deployment remains valid even if GitHub does not contain a `public` directory. The builder also creates `public` defensively before `next build`.
