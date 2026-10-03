@@ -42,3 +42,10 @@ Untuk produksi skala besar, pindahkan migrasi panjang dari HTTP request ke worke
 
 ## Railway Docker note (v2.2)
 The Dockerfile does not require `/app/public` in the runner image, so deployment remains valid even if GitHub does not contain a `public` directory. The builder also creates `public` defensively before `next build`.
+
+## v2.3 modules
+UI now includes Journal Voucher, Sales Invoice, Sales Receipt, Purchase Invoice, Purchase Payment, Other Payment, Other Deposit, COA, Item, Customer, Vendor, and Fixed Asset. Fixed Asset is visible but intentionally disabled until its bulk-save/write schema is supplied; the provided Fixed Asset documentation only contains read/list/detail/delete information.
+
+The brand header uses the supplied AOL Migrator ACIS artwork with the old embedded tagline cropped out and the new tagline rendered by the app: **Solusi Migrasi Antar Database Accurate Online**.
+
+For OAuth, copy the complete `AOL_SCOPES` value from `.env.example` to Railway and reconnect Source/Target OAuth after changing scopes so Accurate can grant the new permissions.
