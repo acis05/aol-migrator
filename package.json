@@ -1,1 +1,28 @@
-{"name":"aol-migrator-acis","version":"0.1.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start","typecheck":"tsc --noEmit"},"dependencies":{"next":"15.5.4","react":"19.1.1","react-dom":"19.1.1","pg":"^8.16.3","zod":"^4.1.11"},"devDependencies":{"@types/node":"^22.18.6","@types/pg":"^8.15.5","@types/react":"^19.1.16","@types/react-dom":"^19.1.9","typescript":"^5.9.2"},"engines":{"node":">=20"}}
+{
+  "name": "aol-migrator-acis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "15.5.9",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "pg": "^8.16.3",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "@types/pg": "^8.15.5",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
