@@ -1,0 +1,1 @@
+import {selectDb} from "@/lib/aol";export async function POST(req:Request){try{const b=await req.json();return Response.json(await selectDb(b.role,Number(b.id),String(b.alias)))}catch(e:any){return Response.json({error:e.message},{status:400})}}

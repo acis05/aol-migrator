@@ -1,0 +1,1 @@
+import "./globals.css";export const metadata={title:"AOL Migrator ACIS",description:"Migrasi Accurate Online ke Accurate Online"};export default function Layout({children}:{children:React.ReactNode}){return <html lang="id"><body>{children}</body></html>}

@@ -1,0 +1,1 @@
+import {NextRequest} from "next/server";import {dbList,Role} from "@/lib/aol";export async function GET(req:NextRequest){try{return Response.json(await dbList((req.nextUrl.searchParams.get('role')||'source') as Role))}catch(e:any){return Response.json({error:e.message},{status:401})}}
